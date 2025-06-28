@@ -8,7 +8,7 @@ class TestUrbanRoutes:
         if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
             print("Conectado ao servidor Urban Routes")
         else:
-            print("Não foi possível conectar ao Urban Routes. Verifique se o servidor está ligado e ainda em execução.”)
+            print("Não foi possível conectar ao Urban Routes. Verifique se o servidor está ligado e ainda em execução.")
 
     def test_set_route(self):
         # Adicionar em S8
@@ -22,7 +22,7 @@ class TestUrbanRoutes:
 
     def test_fill_phone_number(self):
         # Adicionar em S8
-        print("função criada para selecionar o plano")
+        print("função criada para selecionar o número de telefone")
         pass
 
     def test_fill_card(self):
@@ -42,7 +42,9 @@ class TestUrbanRoutes:
 
     def test_order_2_ice_creams(self):
         # Adicionar em S8
-        print("função criada para pedir 2 sorvetes")
+        number_of_ice_cream = 2
+        for count in range(number_of_ice_cream):
+         print("função criada para pedir 2 sorvetes")
         pass
 
     def test_car_search_model_appears(self):
